@@ -10,12 +10,12 @@
 $ git clone https://github.com/arulami/Calabash-android.git
 ```
 
-- In Terminal go to project folder ZenlyInstall command to install both Zenly and email app as a initial set up
+- In Terminal go to project folder Zenly-app and follow commands to install both Zenly and email app as a initial set up
  
  ```
  $ cd Zenly-app
  $ bundle install
- # emulator cmd
+ # for emulator 
  $ calabash-android run Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @reinstall 
  ```
  
@@ -36,3 +36,10 @@ $ adb devices # to get Device serial No
 $ calabash-android run ADB_DEVICE_ARGS=<serial_No> Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @location_sharing
 ```
 
+###Trouble shooting
+
+   please refer following link to run calabash android if you get error on keystore
+   [keystore](https://github.com/calabash/calabash-android/wiki/Running-Calabash-Android)
+   
+###Reference for calabash-android
+   [calabash-android](https://github.com/calabash/calabash-android)
