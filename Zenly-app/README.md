@@ -1,10 +1,10 @@
 #Calabash-android installation guide for Zenly
 
-    We are going to use email app and Zenly app for temporary sharing location
+  Test email app and Zenly app for temporary sharing location using calabash-android
 
 - Delete the email app if already present in emulator or Device 
 
-- clone the project using
+- Clone the project using
 
 ```
 $ git clone https://github.com/arulami/Calabash-android.git
@@ -18,27 +18,41 @@ $ git clone https://github.com/arulami/Calabash-android.git
  # for emulator 
  $ calabash-android run Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @reinstall 
  ```
+   1. Configure your email in email app to send emails
+   2. Authenticate Zenly by receiving SMS
  
-- Then run Test the Zenly app for location sharing 
+   3. Test the Zenly app for location sharing if you want in emulator using below cmd:
  
  ```
  $ calabash-android run Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @location_sharing
  ```
  
-- To run on Device additionally pass Args of serial no. of Device by adb cmd
+- To run on Device additionally pass Args of serial no. of Device by adb cmd and repeat installations steps
+    
 
 ```
 $ adb devices # to get Device serial No
 ```
 
 ```
+$ calabash-android run ADB_DEVICE_ARGS=<serial_No> Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @reinstall
+
+```
+  1. Configure your email in email app to send emails
+  2. Authenticate Zenly by receiving SMS
+   
+  3. Test the Zenly app for location sharing if you want in Device using below cmd:
+   
+
+```
 #Device cmd
 $ calabash-android run ADB_DEVICE_ARGS=<serial_No> Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @location_sharing
 ```
 
+    
 ###Trouble shooting
 
-   please refer following link to run calabash android if you get error on keystore
+   please refer following link to run calabash android if you get error for keystore
    [keystore](https://github.com/calabash/calabash-android/wiki/Running-Calabash-Android)
    
 ###Reference for calabash-android
