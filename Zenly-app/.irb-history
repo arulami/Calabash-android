@@ -1,0 +1,50 @@
+query("*")
+element_exists("* id:'nav_menu_ghost_btn'")
+query("*")
+adb shell input keyevent 4
+adb shell input keyevent "4"
+adb shell input keyevent
+adb shell input keyevent KEYCODE_BACK
+query("* id:'navigationBarBackground'")
+touch("* id:'navigationBarBackground'")
+touch("* id:'Background'")
+touch("* id:'background'")
+adb shell input keyevent KEYCODE_BACK
+adb shell input keyevent 1
+adb
+
+query("*")
+query("* text:'Friends'")
+query("* text:'Sharing'")
+touch("* text:'Sharing'")
+query("*")
+touch("* text:'E-mail'")
+query("*")
+exit
+path1 = File.expand_path("Zenly Locator Realtime GPS_v1.1.91_apkpure.com.apk")
+@@app1 = Calabash::Android::Operations::Device.new(self, nil, "34801", path1, test_server_path(path1), 7103)
+path2 = File.expand_path("Email mail box fast mail_v1.10_apkpure.com.apk")
+@@app2 = Calabash::Android::Operations::Device.new(self, nil, "34802", path2, test_server_path(path2), 7104)
+@@app2.start_test_server_in_background
+query("*")
+set_default_device(@@app2)
+query("*")
+query("* id:'to'")
+touch("* id:'to'")
+enter_text("* id:'to'",'arulami@gmail.com'")
+enter_text("* id:'to','arulami@gmail.com'")
+keyboard_enter_text("arulami@gmail.com")
+exit
+exit
+start_test_server_in_background
+query("*")
+exit
+start_test_server_in_background
+query("*")
+exit
+start_test_server_in_background
+
+start_test_server_in_background
+start_test_server_in_background
+query("*")
+exit
