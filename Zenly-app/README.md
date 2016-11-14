@@ -17,10 +17,11 @@ $ git clone https://github.com/arulami/Calabash-android.git
  $ bundle install
  # for emulator 
  $ calabash-android run Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @reinstall 
+ 
  ```
+  
    1. Configure your email in email app to send emails
    2. Authenticate Zenly by receiving SMS
- 
    3. Test the Zenly app for location sharing if you want in emulator using below cmd:
  
  ```
@@ -40,7 +41,6 @@ $ calabash-android run ADB_DEVICE_ARGS=<serial_No> Zenly\ Locator\ Realtime\ GPS
 ```
   1. Configure your email in email app to send emails
   2. Authenticate Zenly by receiving SMS
-   
   3. Test the Zenly app for location sharing if you want in Device using below cmd:
    
 
