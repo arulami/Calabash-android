@@ -19,8 +19,8 @@ $ git clone https://github.com/arulami/Calabash-android.git
  $ calabash-android run Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @reinstall 
  
 ```
-  1. Configure your email in email app to send emails
-  2. Authenticate Zenly by receiving SMS
+  1. Manually Configure your email in email app to send emails
+  2. Manually configure and Authenticate Zenly by receiving SMS
   3. Test the Zenly app for location sharing if you want in emulator using below cmd:
  
 ```
@@ -39,8 +39,8 @@ $ adb devices # to get Device serial No
 $ calabash-android run ADB_DEVICE_ARGS=<serial_No> Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @reinstall
 
 ```
-  1. Configure your email in email app to send emails
-  2. Authenticate Zenly by receiving SMS
+  1. Manually Configure your email in email app to send emails
+  2. Manually configure and Authenticate Zenly by receiving SMS
   3. Test the Zenly app for location sharing if you want in Device using below cmd:
    
 
@@ -49,7 +49,9 @@ $ calabash-android run ADB_DEVICE_ARGS=<serial_No> Zenly\ Locator\ Realtime\ GPS
 $ calabash-android run ADB_DEVICE_ARGS=<serial_No> Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @location_sharing
 ```
 
-    
+   *Note: I have controlled installtion of apps using @reinstall, So please run as an initial set up to configure email and Zenly
+   Don't run with other tags*
+   
 ###Trouble shooting
 
    please refer following link to run calabash android if you get error for keystore
