@@ -49,7 +49,7 @@ $ calabash-android run ADB_DEVICE_ARGS=<serial_No> Zenly\ Locator\ Realtime\ GPS
 $ calabash-android run ADB_DEVICE_ARGS=<serial_No> Zenly\ Locator\ Realtime\ GPS_v1.1.91_apkpure.com.apk --tags @location_sharing
 ```
 
-   *Note: I have controlled installation of apps using @reinstall, So please run as an initial set up to configure email and Zenly
+   *Note: I have controlled installation of apps using @reinstall, So please run as an initial set up to configure email and Zenly app
    Don't run with other tags*
    
    *These apps are tested by creating two test servers and configured the client to send requests to each app in turn.*
