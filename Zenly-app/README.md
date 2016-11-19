@@ -10,7 +10,7 @@
 $ git clone https://github.com/arulami/Calabash-android.git
 ```
 
-- In Terminal go to project folder Zenly-app and follow commands to install both Zenly and email app as a initial set up
+- In Terminal go to project folder Zenly-app and follow commands to install both Zenly and email app as an initial set up
  
 ```
  $ cd Zenly-app
